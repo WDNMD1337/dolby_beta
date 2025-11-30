@@ -36,7 +36,7 @@ jobs:
         
     - name: Update UnblockNeteaseMusic
       run: |
-        git clone --depth=1 https://github.com/UnblockNeteaseMusic/server.git
+        git clone --depth=1 https://github.com/WDNMD1337/server.git
         cd server && zip -r ../UnblockNeteaseMusic.zip . && cd ..
         
     - name: Decompile and modify
@@ -64,4 +64,5 @@ jobs:
       with:
         name: modified-apk
         path: dolby_beta_modified.apk
+
         retention-days: 30
